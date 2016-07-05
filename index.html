@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="keywords" content="网易、教育产品部、产品设计、编程语言、最热排行、课程" />
+	<meta name="description" content="网易云课堂微专业前端工程师实践作业" />
+	<meta name="author" content="CaoFei"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>网易教育产品部</title>
+	<link rel="stylesheet" type="text/css" href="style/index.css" />
+	<link rel="shortcut icon" href="images/icon.png" />
+	<script src="javascript/md5.js"></script>
+</head>
+<body>
+<div id="content">
+    <!-- 页面头部 -->
+    <div id="header">
+    	<div class="header-message" id="j-display">
+        	<div class="wrap">
+                <p>网易云课堂微专业，帮助你掌握专业技能，令你求职或加薪多一份独特优势！<a href="#" target="_black"> 立即查看&gt;</a></p>
+                <p class="message f-fr f-csp">不再提醒</p>
+            </div>
+        </div>
+        <div class="header-nav">
+            <div class="logo f-fl">
+                <h2 class="f-fwn">网易教育产品部</h2>
+            </div>
+			<!-- 登录表单模块 -->
+            <div class="login-area f-fl f-pr" id="j-login">
+                <input id="j-input" class="attention f-fl f-csp" type="button" value="关注" />
+                <a class="cancel f-dn">取消</a>
+                <p class="fans f-fl">粉丝 <span id=fansNum>45</span></p>
+                <div class="popup-login" style="display:none;">
+                	<div class="bg"></div>
+                    <div class="popup">
+                        <div class="close"></div>
+                        <h3>登录网易云课堂</h3>
+                        <div class="form f-pr f-oh">
+                            <input type="text" />
+                            <label>帐号</label>
+                        </div>
+                        <div class="form f-pr f-oh">
+                            <input type="password" />
+                            <label>密码</label>
+                        </div>
+                        <button class="submit"></button>
+                    </div>
+                </div>
+            </div>
+			<!-- 页面顶部导航 -->
+            <div class="nav f-fr">
+                <a href="http://open.163.com/" target="_blank">网易公开课</a>
+                <a href="http://study.163.com" target="_blank">云课堂</a>
+                <a href="http://www.icourse163.org/" target="_blank">中国大学MOOC</a>
+                <a class="search f-db f-fl"></a>
+            </div> 	
+		</div>
+		<!-- 轮播图 -->
+		<div class="header-banner f-pr f-oh" id="j-slide">
+            <a href="http://open.163.com"><img class="banner" src="images/banner1.jpg"></a>
+			<a href="http://study.163.com" style="display:none"><img class="banner" src="images/banner2.jpg"></a>
+			<a href="http://icourse163.org" style="display:none"><img class="banner" src="images/banner3.jpg"></a>
+		    <ul>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+        </div>
+		<!-- 三个产品 -->
+		<div class="header-product">
+            <div class="wrap1 f-fl">
+                <div class="icon icon1 f-fl">
+                    
+                </div>
+                <div class="team">
+                    <h3>网易公开课</h3>
+                    <p>推出国内外名校公开课，涉及广泛的学科，名校老师认真讲解深度剖析，网易视频公开课频道搭建起强有力的网络视频教学平台。</p>
+                    <a href="http://open.163.com/" target="_blank">了解更多 &gt;</a>
+                </div>
+            </div>
+            <div class="wrap1 f-fl">
+                <div class="icon icon2 f-fl">
+                    
+                </div>
+                <div class="team">
+                    <h3>云课堂</h3>
+                    <p>网易旗下大型在线学习平台，该平台面向学习者提供海量免费、优质课程，创新的个性化学习体验，自由开放的交流互动环境。</p>
+                    <a href="http://study.163.com" target="_blank">了解更多 &gt;</a>
+                </div>
+            </div>
+            <div class="wrap1 f-fl">
+                <div class="icon icon3 f-fl">
+                    
+                </div>
+                <div class="team">
+                    <h3>中国大学MOOC</h3>
+                    <p>是爱课程网携手云课堂打造的在线学习平台，每一个有提升愿望的人，都可以在这里学习中国最好的大学课程，学完还能获得认证证书。</p>
+                    <a href="http://www.icourse163.org/" target="_blank">了解更多 &gt;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+	
+	<!-- 页面主体 -->
+    <div id="main">   
+	    <!-- 工作环境 -->
+	    <div class="main-workplace">
+            <div class="workplacePic">
+                <img src="images/workplace1.jpg" alt="工作环境一" title="工作环境一" /> 
+                <img src="images/workplace2.jpg" alt="工作环境二" title="工作环境二" /> 
+                <img src="images/workplace3.jpg" alt="工作环境三" title="工作环境三" /> 
+                <img src="images/workplace4.jpg" alt="工作环境四" title="工作环境四" /> 
+                <img class="last" src="images/workplace5.jpg" alt="工作环境五" title="工作环境五" /> 
+             </div>
+        </div> 
+	    <div class="main-content f-cb">
+            <div class="course f-fl">
+            	<div class="course-nav" id="j-tab">
+                    <div class="course-table">
+                        <div class="btn active">产品设计</div>
+                        <div class="btn">编程语言</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="design f-cb">
+                           <!-- <div class="course-details">
+                                    <img src="http://img2.ph.126.net/1Md8406dmo1TPHnYD67fdw==/6598260537750239978.jpg">
+                                    <p class="coursename f-toe">Windows Phone 7 带来了什么?　</p>
+                                    <div class="provider">极客公园</div>
+                                    <span>416</span>
+                                    <strong class="free">免费</strong>
+                                    <a>
+                                        <img src="http://img2.ph.126.net/1Md8406dmo1TPHnYD67fdw==/6598260537750239978.jpg">
+                                        <h3>Windows Phone 7 带来了什么?　</h3>
+                                        <span>416人在学</span>
+                                        <p class="categoryname">发布者：极客公园<br>分类：无</p>
+                                        <p class="description">　本期极客活动将邀请国内在 Windows Phone 7 平台有重要表现的嘉宾们，他们将于我们共同探讨 WP 7 手机的到来带来了什么样的革新和体验，并一起来看看他们又做了哪些创新。</p>
+                                    </a>
+                                </div> -->
+                        </div>
+                        <div class="language f-cb" style="display:none;">
+                        </div>	
+                    </div>
+                    <div class="course-page" id="coursePage">
+                        <a class="prve"></a>
+                        <a class="page-num" href="javascript:;">1</a>
+                        <a class="page-num active" href="javascript:;">2</a>
+                        <a class="page-num" href="javascript:;">3</a>
+                        <a class="page-num" href="javascript:;">4</a>
+                        <a class="page-num" href="javascript:;">5</a>
+                        <a class="page-num" href="javascript:;">6</a>
+                        <a class="page-num" href="javascript:;">7</a>
+                        <a class="page-num" href="javascript:;">8</a>
+                        <a class="next"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="course-sidebar f-fl" id="j-list">
+            	<div class="course-video">
+                    <h4>机构介绍</h4>
+                    <p class="title">观看下面的视频来了解吧：</p>
+                    <div class="trigger">
+                        <img class="videobg" src="images/video.jpg" />
+                        <img class="play f-pr" src="images/play.png" />
+                    </div>
+                    <div class="popup-video" style=" display:none;">
+                    	<div class="bg"></div>
+                        <div class="popup">
+                            <p>请观看下面的视频</p>
+                            <video controls poster="images/videoBig.jpg" src="http://mov.bn.netease.com/open-movie/nos/mp4/2014/12/30/SADQ86F5S_shd.mp4" width="889" height="538" /></video>
+                            <div class="close"></div>
+                        </div>
+                    </div>
+                </div>
+                <h3>最热排行</h3>
+                <div class="course-list f-pr f-oh">
+                    <div class="wrap2">
+                        <!--<a>
+                            <div>
+                                <img src="http://img2.ph.126.net/eVPQpEzCRzokOUQQTkB7VQ==/6630583980584539298.jpg" />
+                            </div>
+                            <p>和秋叶一起学职场技能</p>
+                            <span>33333</span>
+                        </a>-->
+                    </div>
+                </div>      
+            </div>
+        </div>
+    </div>
+	
+	<!-- 页面底部 -->
+	<div id="footer">
+    	<div class="footer-nav">
+            <div class="copyRight f-fl">
+                <div class="logo">网易教育产品部</div>
+                <p>©2014 icourse163.org 浙ICP备08114786号-1<br/> icourses.cn 京ICP备12020869号-2 京公安网备110102000459-2</p>
+            </div>
+            <div class="friendLink f-fl">
+                <p>友情链接：</p>
+                <a href=" " target="_blank">网易公开课</a>
+                <a href=" " target="_blank">网易云课堂</a>
+                <a href=" " target="_blank">中国大学MOOC</a>
+            </div>
+            <div class="about f-fl">
+                <p>我们：</p>
+                <a href=" " target="_blank">关于</a>
+                <a href=" " target="_blank">联系</a>
+                <a class="weibo" href=" " target="_blank">关注</a>
+            </div>
+            <div class="more f-fl">
+                <p>更多：</p>
+                <a href=" " target="_blank">常见问题</a>
+                <a href=" " target="_blank">意见反馈</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="javascript/util.js" type="text/javascript"></script>
+<script src="javascript/index.js" type="text/javascript"></script>
+</body>
+</html>
